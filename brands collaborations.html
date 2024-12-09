@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brands Collaborations</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Nunito', sans-serif;
+            background-color: #121212;
+            color: #fff;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color:  #FBE4D8;
+        }
+        .navbar-nav .nav-link {
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #FBE4D8;
+        }
+
+        /* Header Section */
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 50vh;
+            background: linear-gradient(180deg, #2B124C, #FBE4D8);
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        section h1 {
+            margin: 0;
+            font-family: 'Abril Fatface', serif;
+            font-size: 3rem;
+        }
+        section p {
+            margin-top: 10px;
+            font-size: 2rem;
+        }
+
+        /* Brand Grid */
+        .container {
+            padding: 20px;
+        }
+        .row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            background: #FBE4D8;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            animation: slideIn 1.5s ease-out;
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: fill;
+            background: rgb(250, 238, 255);
+            transition: transform 0.3s;
+        }
+        .card img:hover {
+            transform: scale(1.1);
+        }
+        .card-body {
+            padding: 10px;
+            text-align: center;
+        }
+        .card-title {
+            font-size: 1.4rem;
+            color: #2B124C;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px 20px;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+        .social-links a {
+            margin: 0 10px;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color:  #2B124C;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a class="navbar-brand" href="index.html">Yuvika Chadha</a>
+        <div class="navbar-nav">
+            <a class="nav-link" href="index.html">Home</a>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <section>
+        <h1>Brands Collaborations</h1>
+        <p>Here are some of the amazing brands I've had the privilege to collaborate with.</p>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <!-- Brand Cards -->
+            <div class="card">
+                <img src="Sky media high quality - Copy.png" alt="Brand 1">
+                <div class="card-body">
+                    <h5 class="card-title">Sky media & Consultancy</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="pixel shark.png" alt="Brand 2">
+                <div class="card-body">
+                    <h5 class="card-title">Pixel Shark Marketing Agency</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="ethnichik.png" alt="Brand 3">
+                <div class="card-body">
+                    <h5 class="card-title">Ethnichik</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="brooche.png" alt="Brand 4">
+                <div class="card-body">
+                    <h5 class="card-title">Brooche</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="authentic biotics.png" alt="Brand 5">
+                <div class="card-body">
+                    <h5 class="card-title">Authentic Biotics</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="cipher shark.png" alt="Brand 6">
+                <div class="card-body">
+                    <h5 class="card-title">Cipher Shark Marketing Agency</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="fonbee.png" alt="Brand 7">
+                <div class="card-body">
+                    <h5 class="card-title">Fonbee</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="dream space.png" alt="Brand 8">
+                <div class="card-body">
+                    <h5 class="card-title">Dream Space Interiors</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="the summer store.png" alt="Brand 9">
+                <div class="card-body">
+                    <h5 class="card-title">The Summer Store.</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="c2c.png" alt="Brand 10">
+                <div class="card-body">
+                    <h5 class="card-title">Click 2 Clean</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="noroke.png" alt="Brand 11">
+                <div class="card-body">
+                    <h5 class="card-title">Noroke</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="hyde.png" alt="Brand 12">
+                <div class="card-body">
+                    <h5 class="card-title">Hyde Wear</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="indie nails.png" alt="Brand 13">
+                <div class="card-body">
+                    <h5 class="card-title">Indie Nails</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="teeside.png" alt="Brand 14">
+                <div class="card-body">
+                    <h5 class="card-title">Teeside. Clothing</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="tranqul.png" alt="Brand 15">
+                <div class="card-body">
+                    <h5 class="card-title">Tranqul</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="youcure.png" alt="Brand 16">
+                <div class="card-body">
+                    <h5 class="card-title">YouCure</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Yuvika Chadha</p>
+        <div class="social-links">
+            <a href="https://in.linkedin.com/in/yuvika-chadha-2763112b7" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="https://www.instagram.com/yuvichadha05/" class="fab fa-instagram"></a>
+        </div>
+    </footer>
+</body>
+</html>

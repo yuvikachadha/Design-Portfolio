@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Assignments</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Nunito', sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #FBE4D8;
+        }
+        .navbar-nav .nav-link {
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #FBE4D8;
+        }
+
+        /* Header Section */
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 50vh;
+            background: linear-gradient(180deg,#2B124C, #FBE4D8);
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        section h1 {
+            margin: 0;
+            font-family: 'Abril Fatface', serif;
+            font-size: 3rem;
+        }
+        section p {
+            margin-top: 10px;
+            font-size: 2rem;
+        }
+
+        /* Card Grid */
+        .container {
+            padding: 20px;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            background: #FBE4D8;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            width: 300px;
+            animation: slideIn 1.5s ease-out;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: fill;
+            transition: transform 0.3s;
+        }
+        .card img:hover {
+            transform: scale(1.05);
+        }
+        .card-body {
+            padding: 15px;
+            text-align: center;
+        }
+        .card-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #2B124C;
+        }
+        .card-text {
+            font-size: 0.9rem;
+            color: #2B124C;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px 20px;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+        .social-links a {
+            margin: 0 10px;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: #2B124C;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a class="navbar-brand" href="index.html">Yuvika Chadha</a>
+        <div class="navbar-nav">
+            <a class="nav-link" href="index.html">Home</a>
+    </nav>
+
+    <!-- Page Content -->
+    <section>
+        <h1>College Assignments</h1>
+        <p>Explore my academic projects.</p>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="card">
+                <img src="W1 devil - Copy.png" alt="Work 1">
+                <div class="card-body">
+                    <h5 class="card-title">Poster Design</h5>
+                    <p class="card-text">Devil Rose my own perfume colour-changing product poster.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="W2 garden.png" alt="Work 2">
+                <div class="card-body">
+                    <h5 class="card-title">In-house Garden</h5>
+                    <p class="card-text">I created an in-house magical garden for a client with stone art, waterfalls and plants.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="W3 kahani - Copy.png" alt="Work 3">
+                <div class="card-body">
+                    <h5 class="card-title">storyboarding</h5>
+                    <p class="card-text">A modern approach to folk art depicting an inter-caste love story.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="W4 VINYL.png" alt="Work 4">
+                <div class="card-body">
+                    <h5 class="card-title">Vinyl Cover</h5>
+                    <p class="card-text">The best of Kishore Kumar.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="W5 museum.png" alt="Work 5">
+                <div class="card-body">
+                    <h5 class="card-title">Museum Interior</h5>
+                    <p class="card-text">Model of a museum interior with miniature art.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="W6 MAGZINE.png" alt="Work 6">
+                <div class="card-body">
+                    <h5 class="card-title">Magazine Cover</h5>
+                    <p class="card-text">Featuring myself in a magazine cover while discovering tools.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="W7 FIGMA.png" alt="Work 7">
+                <div class="card-body">
+                    <h5 class="card-title">Spotify Interactions</h5>
+                    <p class="card-text">These are some micro interactions of Spotify on Figma.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="W7 FLYER.png" alt="Work 8">
+                <div class="card-body">
+                    <h5 class="card-title">Flyer Design</h5>
+                    <p class="card-text">Created my brand named HueVibe with colour-changing perfume bottles.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Yuvika Chadha</p>
+        <div class="social-links">
+            <a href="https://in.linkedin.com/in/yuvika-chadha-2763112b7" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="https://www.instagram.com/yuvichadha05/" class="fab fa-instagram"></a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Reels</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Nunito', sans-serif;
+            background-color: #121212;
+            color: #fff;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #FBE4D8;
+        }
+        .navbar-nav .nav-link {
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #FBE4D8;
+        }
+
+        /* Header Section */
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 50vh;
+            background: linear-gradient(180deg, #2B124C, #FBE4D8);
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        section h1 {
+            margin: 0;
+            font-family: 'Abril Fatface', serif;
+            font-size: 3rem;
+        }
+        section p {
+            margin-top: 10px;
+            font-size: 2rem;
+        }
+
+        /* Video Grid */
+        .container {
+            padding: 20px;
+        }
+        .row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+        .video-card {
+            background: #FBE4D8;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            animation: slideIn 1.5s ease-out;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .video-card iframe {
+            width: 100%;
+            height: 350px; /* Portrait aspect ratio */
+        }
+        .card-body {
+            padding: 10px;
+            text-align: center;
+        }
+        .card-title {
+            font-size: 1.2rem;
+            color: #2B124C;
+            font-weight: bold;
+        }
+        .card-text {
+            font-size: 0.9rem;
+            color: #2B124C;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px 20px;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+        .social-links a {
+            margin: 0 10px;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: #03a9f4;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a class="navbar-brand" href="index.html">Yuvika Chadha</a>
+        <div class="navbar-nav">
+            <a class="nav-link" href="index.html">Home</a>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <section>
+        <h1>Marketing Reels</h1>
+        <p>Explore my marketing campaigns and projects captured in these reels.</p>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <!-- Video Cards -->
+            <div class="video-card">
+                <iframe src="Summer Store ad - Copy.mp4" allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">The Summer Store</h5>
+                    <p class="card-text">A colourful clothing brand with GenZ styles.</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <iframe src="authentic biotic ad.mp4" allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Authentic Biotic</h5>
+                    <p class="card-text">Brain focus improvement tablets for the active people around..</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <iframe src="HYDE AD. - Copy.mp4" allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Hyde Wear</h5>
+                    <p class="card-text">Elite goggles to go all out with style.</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <iframe src="ethnichik ad.mp4" allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Ethnichik</h5>
+                    <p class="card-text">A clothing brand for chikankari lovers.</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <iframe src="indie ad.mp4" allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Indie Nails</h5>
+                    <p class="card-text">Mkae your own sets with indie nails with the most elegant shades.</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <iframe src="Dream Space product ad - Copy.mp4" allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Dream Space Interiors</h5>
+                    <p class="card-text">Most unique, cool and eye catchy interiors.</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <iframe src="C2C Services both - Copy.mp4" allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Click 2  Clean</h5>
+                    <p class="card-text">The most affordable and trustworthy pest control and deep cleanig services.</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <iframe src="brooche ad.mp4" allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">The Brooche</h5>
+                    <p class="card-text">New tech savvy phone cases which stores memories.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Yuvika Chadha</p>
+        <div class="social-links">
+            <a href="https://in.linkedin.com/in/yuvika-chadha-2763112b7" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="https://www.instagram.com/yuvichadha05/" class="fab fa-instagram"></a>
+        </div>
+    </footer>
+</body>
+</html>
